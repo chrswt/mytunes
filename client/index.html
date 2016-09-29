@@ -21,23 +21,25 @@
     <script src="views/AppView.js"></script>
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
+    <script src="views/SearchView.js"></script>
 
     <script src="env/config.js"></script>
-    <script src="scripts/getData.js"></script>
+    <script src="routers/AppRouter.js"></script>
+
     <script>
       $(function() {
-        // songData = data.results;
         // set up model objects
         var library = new Songs();
         // console.log('library',library);
         var app = new AppModel({library: library});
-
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
 
         // put the view onto the screen
         $('body').append(appView.render());
-        //fetch();
+
+        var router = new AppRouter({model: app});
+        Backbone.history.start();
       });
     </script>
   </body>
