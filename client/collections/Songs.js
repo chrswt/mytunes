@@ -5,19 +5,12 @@ var Songs = Backbone.Collection.extend({
   url: 'https://api.parse.com/1/classes/songs/',
 
   initialize: function(params) {
-    var context = this;
+    this.fetch();
 
-    // debugger;
-    var data = this.fetch();
-
-    data.done(function() {
-      console.log(data);
-      console.log(context);
-      // data.responseJSON.results.forEach(function(song) {
-      //   context.add(song);
-      // });
-      // console.log(context);
-    });
+  },
+  
+  parse: function(response) {
+    return response.results;
   }
 
 });
