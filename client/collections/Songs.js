@@ -6,7 +6,6 @@ var Songs = Backbone.Collection.extend({
 
   initialize: function(params) {
     this.fetch();
-
   },
   
   parse: function(response) {
