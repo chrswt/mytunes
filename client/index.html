@@ -14,7 +14,7 @@
 
     <script src="collections/Songs.js"></script>
     <script src="collections/SongQueue.js"></script>
-    
+
     <script src="views/PlayerView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
@@ -22,10 +22,14 @@
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
 
+    <script src="env/config.js"></script>
+    <script src="scripts/getData.js"></script>
     <script>
       $(function() {
+        // songData = data.results;
         // set up model objects
-        var library = new Songs(songData);
+        var library = new Songs();
+        // console.log('library',library);
         var app = new AppModel({library: library});
 
         // build a view for the top level of the whole app
@@ -33,6 +37,7 @@
 
         // put the view onto the screen
         $('body').append(appView.render());
+        //fetch();
       });
     </script>
   </body>
