@@ -1,0 +1,47 @@
+#player {
+  width: 70%;
+  float: left;
+  margin-left: 15%;
+}
+
+#waveform {
+  width: 70%;
+  float: left;
+  margin-left: 15%;
+}
+
+.queue, .library {
+  width: 34%;
+  float: left;
+}
+
+.library {
+  margin-left: 15%;
+  margin-right: 2%;
+}
+
+.queue {
+  margin-right: 15%;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: 'David Libre', serif;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: rgba(255, 170, 76, 0.7);
+  cursor: pointer;
+}
+
+td {
+  padding-top: 8px;
+}
+
+th {
+  font-size: 28px;
+}

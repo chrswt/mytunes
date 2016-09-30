@@ -3,11 +3,13 @@
   <body>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre"
+    rel="stylesheet">
+
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
-
-    <script src="data/data.js"></script>
 
     <script src="models/SongModel.js"></script>
     <script src="models/AppModel.js"></script>
@@ -24,8 +26,9 @@
     <script src="views/SearchView.js"></script>
     <script src="views/VisualizerView.js"></script>
 
-    <script src="env/config.js"></script>
     <script src="routers/AppRouter.js"></script>
+
+    <script src="env/config.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
 
     <script>
