@@ -17,7 +17,7 @@ var AppRouter = Backbone.Router.extend({
     'songs/:title': function(title) {
       this.listenToOnce(this.model.get('library'), 'sync', function() {
         var song = this.model.get('library').findWhere({'title': title});
-        song.play();
+        song.enqueue();
       });
     }
   }
