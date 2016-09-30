@@ -5,7 +5,7 @@ var Songs = Backbone.Collection.extend({
   url: 'https://api.parse.com/1/classes/songs/',
 
   initialize: function(params) {
-    this.fetch().done(function(data) {console.log(JSON.stringify(data))});
+    this.fetch();
   },
   
   parse: function(response) {
