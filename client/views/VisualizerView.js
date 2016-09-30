@@ -25,7 +25,7 @@ var VisualizerView = Backbone.View.extend({
       container: '#waveform',
       waveColor: 'lightgrey',
       progressColor: 'orange',
-      barWidth: 4,
+      barWidth: 3.5,
       interact: false
     });
 

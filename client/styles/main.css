@@ -11,6 +11,7 @@
 }
 
 .queue, .library {
+  margin-top: 2%;
   width: 34%;
   float: left;
 }
@@ -24,7 +25,14 @@
   margin-right: 15%;
 }
 
+body {
+  overflow: hidden;
+}
+
 table {
+  display: block;
+  height: 68vh;
+  overflow-y: scroll;
   border-collapse: collapse;
   font-family: 'David Libre', serif;
 }
