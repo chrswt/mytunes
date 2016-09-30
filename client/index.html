@@ -22,15 +22,16 @@
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
     <script src="views/SearchView.js"></script>
+    <script src="views/VisualizerView.js"></script>
 
     <script src="env/config.js"></script>
     <script src="routers/AppRouter.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
 
     <script>
       $(function() {
         // set up model objects
         var library = new Songs();
-        // console.log('library',library);
         var app = new AppModel({library: library});
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
@@ -43,8 +44,6 @@
       });
     </script>
 
-    <script src="scripts/visualizer.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.0.52/wavesurfer.min.js"></script>
 
     <div id="waveform"></div>
 
