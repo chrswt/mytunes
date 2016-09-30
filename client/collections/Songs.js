@@ -4,12 +4,12 @@ var Songs = Backbone.Collection.extend({
   model: SongModel,
   url: 'https://api.parse.com/1/classes/songs/',
 
-  // initialize: function(params) {
-  //   this.fetch().done(function(data) {console.log(JSON.stringify(data))});
-  // },
+  initialize: function(params) {
+    this.fetch().done(function(data) {console.log(JSON.stringify(data))});
+  },
   
-  // parse: function(response) {
-  //   return response.results;
-  // }
+  parse: function(response) {
+    return response.results;
+  }
 
 });
